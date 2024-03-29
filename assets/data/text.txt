@@ -1,0 +1,348 @@
+alfred korzybski
+
+The map is the territory
+Bernhard Siegert
+When I read the expression ‘The map is not the
+territory’ for the first time, it occurred to me that it
+contained the quintessence of Anglo-American philosophy
+of common sense. The defiant insistence on a
+logic of representation, a common-sense belief in the
+evidence of an objective ‘reality’ that is prior to all
+mental representations or written marks, a normative
+concept of rigour and scientism – all that appeared
+to be condensed in that one expression, which Alfred
+Korzybski coined in a paper on the ‘Necessity for
+Rigor in Mathematics and Physics’ in 1931, and which
+can be seen as an emblem of analytical philosophy.
+Certainly, I do not intend to start an argument like the
+one that Jacques Derrida once had with John Searle.
+And I will certainly not address the historical issue of
+the divide between the continental and the analytical
+traditions of philosophy, which according to Michael
+Friedman can be traced back to the clash between
+Heidegger and Carnap in the early 1930s. I only wish
+to use the expression of Korzybski, who was a partisan
+of Carnap, to point out the media-philosophical impact
+of Cultural Technologies and Techniques Studies,
+which have constituted a new and rapidly expanding
+field of research and teaching in Germany for about a
+dozen years now. The media-philosophical core of this
+field of research can be seen as the unfolding of the
+possible meanings of negating Korzybski’s negation,
+namely that ‘the map is the territory’.
+One of the possible meanings of this sentence can
+be found in those maps that were invented by Lewis
+Carroll and Jorge Luís Borges: maps of a territory
+or an empire in the scale of 1 : 1. In Lewis Carroll’s
+Sylvie and Bruno Concluded a German professor
+tells the story of how the map-makers of Germany
+had experimented with the use of always larger maps,
+until they finally produced a map of the scale of 1 : 1.
+‘It has never been spread out, yet’, said the professor.
+‘The farmers objected: they said it would cover the
+whole country, and shut out the sunlight! So we now
+use the country itself, as its own map, and I assure
+you it does nearly as well.’1 Borges’s text ‘Del rigor
+en la ciencia’ tells of an empire in which the art of
+map-making had reached such a degree of perfection
+that the cartographic institutes were content only with
+a map of the empire that had the size of the empire and
+was congruent with it in each of its points. In the end,
+the map and the empire became indiscernible.2 But it
+is not this interpretation of the sentence ‘the map is
+the territory’ that is relevant for an understanding of
+the media-philosophical core of the concept of cultural
+techniques. As cultural techniques, maps are not just
+representations of a territory. First, they can also be
+representations of the ocean. It is hard for logicians
+to keep in mind that there is an ocean where all
+kinds of contradictions are gathered together and the
+tertium is not non datur but given. Second, maps are
+not just representations but also instruments. They are
+based on mathematical operations and they constitute
+a substantial part of a cultural practice.
+A main feature of the analysis of maps as cultural
+technologies is that it considers maps not as representations
+of space but as spaces of representation.3
+The historicity that is of interest, in the first place, in
+connection with those spatial representations is not the
+historicity of the represented spaces. Instead it is the
+historicity of the space of representation itself.
+From the perspective of Cultural Studies, as well
+as from the perspective of the Study of Cultural Technologies
+and Techniques, maps contain less information
+about a territory than about the way it is observed and
+described. But the hermeneutic or cognitive approach
+that is predominant in Cultural Studies reads the map
+as a key to the understanding of the intentions of those
+who produced the image of the world that is displayed
+by the map.4 Hence, understanding maps means here
+to understand the intentions – the conscious and unconscious
+dispositions – of the authors of the maps,
+their ‘world-view’. In contrast to this reading method,
+the media-philosophical approach inherent in the study
+of cultural technologies and techniques reads maps as
+media that are themselves agents of subject constitution.
+The marks and signs on a map do not refer to
+an authorial subject but to epistemic orders and their
+struggles for dominance over other epistemic orders,
+in the course of which marks and things enter a new
+play of signs. The cartographic operations produce a
+14
+subject, which correlates to them. Such an approach
+does not consider a map as a representation in two
+ways: neither in the sense of a denotation, nor in the
+sense of a reflection of the cultural predisposition of
+an authorial subject. It is instead concerned with the
+way changes in cartographic procedures give rise to
+various orders of representation. Instead of representing
+cultural predispositions, it is their very basis of
+production. What is used for interpretation in the
+approach of hermeneutics and Cultural Studies is
+that which needs to be interpreted in the approach of
+Cultural Techniques and Technologies Studies. Representation
+is not presupposed but is itself a historical
+event, which appears at a certain date in the history
+of cartographic orders. Maps thus appear as sources of
+a history of representation and not as representations
+in a history of intentions and their cultural conditions.
+The concept of cultural techniques is not ‘postmedia’
+in the sense that it is designed to replace
+the concept of the media, or in the sense that in the
+age of digital media artworks transcend the Greenbergian
+dogma of media specificity. But it is ‘postnew-
+media’ in the sense that it suggests we interpret
+Media Studies as something completely different from
+Internet Studies or Mass Media Studies. It attempts to
+turn Media Studies into ‘Medium Studies’ in so far
+as it calls for a ‘physics of media’. It is designed to
+set a new perspective on media or mediums: namely,
+to relate the concept of media/mediums historically
+to ontological and aesthetic operations that process
+distinctions (and the blurring of distinctions) which are
+basic to the sense production of any specific culture.
+Cultural techniques, media studies
+In nineteenth-century Germany, the term ‘cultural technologies’
+signified what in the English language was
+called ‘agricultural engineering’: river regulations for
+instance, but also techniques of breeding and domesticating
+animals. In the 1970s it was related to elementary
+techniques of education: reading, writing, calculating.
+When the concept of cultural techniques re-emerged
+in the context of Media Studies and German Kulturwissenschaft
+shortly before the turn of the new century
+it was based on a post-humanistic understanding of
+culture. Thus, its spectrum could be expanded (for
+instance, to calendar techniques, techniques of jurisdiction,
+or techniques of trance and the sacred) and,
+in addition, it could find a systematic place in the
+context of history of science, legal history, art history,
+cultural anthropology and ethnology, inasmuch as those
+disciplines were themselves effected by the ‘cultural
+turn’. What was left out systematically were the big
+explanatory models of a history of ideas or a philosophy
+of history: the progress of the individual and humanity
+and freedom, on the side of idealism; economic crises
+and revolutions, on the side of materialism.
+The concept of cultural techniques thereby took
+up a feature that had been specific to German media
+theory since the 1980s. This specific feature set apart
+German media studies from Anglo-American media
+studies, as well as from French and German studies of
+communications – let alone sociology, which, under the
+spell of enlightenment, in principle wanted to consider
+media only with respect to the public. German media
+analysis placed at the basis of changes in cultural
+and intellectual history inconspicuous techniques of
+knowledge like card indexes, media of pedagogy like
+the slate, discourse operators like quotation marks,
+uses of the phonograph in phonetics, or techniques of
+forming the individual like practices of teaching to
+read and write. Thus media, symbolic operators and
+practices were selected out, which are today systematically
+related to each other by the concept of cultural
+techniques. The philosophical specificity of German
+media analysis was that it took up Michel Foucault’s
+concept of the historical a priori and turned it into
+a ‘technical a priori’ by referring the Foucauldian
+‘archive’ to media technologies.
+While in communication studies, sociological
+methods played a predominant role, in German media
+studies there was a link established between media
+and changes in knowledge and perception. More precisely,
+it was not so much the question of what was
+15
+represented in the media, and how it was represented,
+and why it was represented in one way and not in
+another, that came into focus – since questions like
+these lead always to the same answers. Content analysis
+of media products will always reproduce the same
+highly predictable results, because it will always find
+what it already knows that it is to be found there. A
+Marxist will always discover the commodity form of
+contents, and a fan of Cultural Studies will always find
+race, class and gender as the cultural semantics which
+govern those contents. In contrast to content analysis,
+parts of German media theory shifted the focus from
+the representation of meaning to the conditions of representation.
+The question is not how the map interprets
+the objective territory it represents, but what techniques
+of representation it uses and how those techniques of
+representation were part of power relations, and how
+the very concept of the territory is related to those
+techniques and those power relations. The whole question
+of representation was shifted towards the question
+of the conditions of representation. These conditions
+are not at all exclusively technical a prioris but involve
+the materiality of media in the broadest sense, including
+their technicality, discourse networks, cultural
+techniques and formations of knowledge.
+The concept of cultural techniques highlights the
+operations or sequences of operations that historically
+and logically precede the media concepts generated
+by them. However, although an operation like counting
+could be processed purely by means of a bodily
+technique, in the sense of Marcel Mauss, it nevertheless
+always presupposes technical objects (be it one’s own
+fingers), which predetermine the performance of the
+operation and thus the concepts derived from that
+operation. Calculation by means of an abacus gives
+rise to another concept of number than calculating
+with one’s ten fingers, and the paper surface and the
+computer to yet other concepts of number.
+The media-philosophical core of the study of cultural
+techniques and technologies therefore consists of
+a vehement criticism of an ontological conception of
+philosophical terms. Instead, the study of cultural techniques
+aims at revealing the operative basis of those
+terms. There is no ‘man’ independent from cultural
+techniques of hominization, or anthropotechnics; there
+is no time independent from the cultural techniques
+of calendars, time measurement and synchronization;
+there is no space independent from cultural techniques
+of ruling spaces and so forth. This does not imply,
+however, that writing the history of cultural techniques
+is meant to be an anti-ontological project. On the
+contrary, it implies more than it excludes a historical
+ontology, which however does not base that which
+exists in ideas, adequate reasons or an eidos, as was
+common in the tradition of metaphysics, but in media
+operations, which work as conditions of possibility
+for artefacts, knowledge, the production of political or
+aesthetic or religious actants.
+The map is the territory inasmuch as, for instance,
+map-making is a cultural technique that, in the service
+of the state, produced the territory as a political
+reality. Let me use the example of one of the most
+famous maps in art history to elaborate in just one
+aspect of the Cultural Techniques approach: the map
+in Johannes Vermeer’s Allegory of Painting (1665–67,
+oil on canvas, Kunsthistorisches Museum, Vienna).
+Vermeer’s map
+On the wall of the painter’s study we see a map of the
+Netherlands, which displays on the right side (north)
+the seven Protestant provinces and on the left (south)
+the ten provinces that stayed under the rule of the
+Spanish Habsburgs. The map that Vermeer displays
+here was created by Claes Jansz Visscher and was
+published some time after 1652.
+The metaphysics of space that lie at the basis of the
+truism ‘that the map is not the territory’ originate from
+the cultural technique of perspectival image construction,
+in which line rules over colour, and the surface
+over the materiality of flatness. Linear perspective is
+biased to support the conception that technical distinctions
+between the eye and the imaginary space, abstract
+space and image objects, are embodiments of the
+metaphysical distinctions between res extensa and res
+cogitans, idea and matter (as happened in Florentine
+16
+disegno theory during the sixteenth century). Although
+Vermeer was a painter who widely used perspectival
+machines like the camera obscura, his thematization
+of the image surface defines the image in a completely
+different way than did Leon Battista Alberti. As the
+concept of representation is rooted in the principles
+of linear perspective, it can be described as a historic
+version of hylomorphism. Following Gilbert Simondon,
+Deleuze and Guattari postulated in A Thousand Plateaus
+what they called nomadic science as an alternative
+to hylomorphism, and I think that the way Media
+Philosophy is analysing the way image spaces operate
+with the help of cultural techniques can be described
+within the conceptual framework of nomadic science.
+Hylomorphism is the name for a metaphysical
+relationship between form and matter that goes back
+to Aristotle, in which it is the form alone to which
+is ascribed the idea, action and being. Matter does
+not matter in terms of what is essentially needed for
+the being to be. Already, early Dutch painters like
+Van Eyck challenged this model of hylomorphism by
+favouring another model, in which the pictorial ground
+does not appear as passive but as possessing a potential
+which has always already initiated a becoming form,
+which is realized by operations like folding, weaving
+or braiding. It is essential for this other model that the
+operations that allow the matter to become form are
+inherent in the structure of the matter; they belong to
+the matter; they are expressions of the matter itself.
+In the model of hylomorphism all matter is assigned
+to the content while form is completely turned into
+expression. But in a media-philosophical conception of
+content and expression, each of the two terms embrace
+form and matter. Matter here appears as a medium
+of singularities. With regard to the map in Vermeer’s
+Allegory of Painting, the surface which represents
+the pictorial ground of an image is not a geometrical
+construction, but some kind of textile matter, which
+is the medium of folds and bends and bubbles of
+colours. ‘The expression, too, is not just formal, but is
+inextricably connected with structural features which
+form a matter of expression.’5
+With regard to the map in Vermeer’s Allegory
+of Painting, the painted object is not exterior to the
+medium of the image, but it is connected to it in a
+recursive way, as it is in the case of the ornament,
+which refers to the structure of the pictorial ground,
+which it translates into a motive. The mediality of the
+image in Vermeer does not separate technique and
+motive; on the contrary, the technique is thematized by
+the motive. The painted ocean on the map in Vermeer’s
+painting displays the structure of the canvas it is
+painted on, and the painted waves repeat and thematize
+these structures, which connect the art of painting to
+the art of weaving. The painted ships sail over the folds
+of the pictorial ground, and the shadows which they
+cast on the painted ocean interfere with the shadow
+which the fold is casting on the ocean. Or is it on the
+canvas? What is the difference between these shadows?
+Are they not both painted shadows, are they not both
+painted on one and the same canvas? As the contours
+of the territory define the map as striated space, the
+structure of the canvas, the ornamental recursivity of
+motive and technique, the folds and bubbles, which
+reflect the light, turn the whole map into an ocean, into
+the smooth space par excellence. The map is the territory.
+In this case this means that as the materiality of
+the map interferes with its contents, and as the medium
+of representation interferes with the representation of
+the territory (for which representation is an ontological
+condition), the map as a representation is deterritorialized
+by the map as a medium.
+
+
+On Exactitude in Science
+Jorge Luis Borges, Collected Fictions, translated by Andrew Hurley. In that Empire, the Art of Cartography attained such Perfection that the map of a
+single Province occupied the entirety of a City, and the map of the Empire, the entirety
+of a Province. In time, those Unconscionable Maps no longer satisfied, and the
+Cartographers Guilds struck a Map of the Empire whose size was that of the Empire, and
+which coincided point for point with it. The following Generations, who were not so
+fond of the Study of Cartography as their Forebears had been, saw that that vast Map
+was Useless, and not without some Pitilessness was it, that they delivered it up to the
+Inclemencies of Sun and Winters. In the Deserts of the West, still today, there are
+Tattered Ruins of that Map, inhabited by Animals and Beggars; in all the Land there is
+no other Relic of the Disciplines of Geography.
+—Suarez Miranda,Viajes de varones prudentes, Libro IV,Cap. XLV, Lerida, 1658
+
+
+
