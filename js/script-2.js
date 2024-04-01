@@ -3,7 +3,8 @@
 
 "use strict";
 
-let news;
+let newsJingleSound;
+let playedAlreadyForThisWord = false;
 
 const voiceOutput = new p5.Speech(); // variables to output speech (class)
 let voiceText = ""; // empty strings
@@ -26,8 +27,15 @@ voiceOutput.interrupt = true;
 let ritaWillSay = [];
 let ritaSaid = [];
 
+let news;
+let newsTitle;
+let newsArticle;
 let showNews = false; // if mouse is over a word
 let newsWord = ""; // word we will get info about
+let mouseOverWord = false;
+let articleCounter = 0; // 
+
+let currentWordMapRita = [];
 
 let letterToNumber = { // ChatGpt4 for reordering/associating the alphabetical object
     "a": "01",
@@ -80,16 +88,53 @@ function preload() {
     dataForRita = loadStrings("assets/data/text.txt"); // P5js ref to load the text files.
     titleFont = loadFont("assets/fonts/dahlia-regularcondensed.otf"); // loading title font
     // myFont = loadFont("assets/fonts/WorkSans-Light.ttf"); // loading text font
+    // const proxyUrl = "https://cors-anywhere.herokuapp.com/"
+    // const qInTitle = "Trump";
+    // const from = "us";
+    // const apiKey = "c3396e37e9bf493381de2ddc7c175ba3";
+    // news = loadJSON(`https://newsapi.org/v2/everything?qInTitle=${qInTitle}&from=${from}language=en&apiKey=${apiKey}`);
+}
+
+function getNews(query) {
     const proxyUrl = "https://cors-anywhere.herokuapp.com/"
-    const qInTitle = "Trump";
+    const qInTitle = query;
     const from = "us";
     const apiKey = "c3396e37e9bf493381de2ddc7c175ba3";
-    news = loadJSON(`https://newsapi.org/v2/everything?qInTitle=${qInTitle}&from=${from}language=en&apiKey=${apiKey}`);
+    const getNewsUrl = `https://newsapi.org/v2/everything?qInTitle=${qInTitle}&from=${from}language=en&apiKey=${apiKey}`;
+    loadJSON(getNewsUrl, newsReady);
+
+}
+
+function newsReady(newNews) {
+    let idx = 0;
+    for (let i = 0; i < newNews.articles.length; i ++) {
+        if (newNews.articles[i].title == "[Removed]") continue;
+        else {
+            idx = i;
+            break;
+        }
+    }
+    showNews = true;
+    news = newNews;
+
+    // reference from a friend to use this js to get try to get articles/titles
+    try { 
+        newsTitle = news.articles[idx].title;
+        newsArticle = news.articles[idx].content;
+    }
+    catch {
+        newsTitle = "No news for " + newsWord;
+        newsArticle = "Nothing to report";
+    }
+    
+    console.log("news title " + newsTitle);
+    console.log("news content " + newsArticle);
 }
 
 function setup() {
     createCanvas(windowWidth,windowHeight);
     console.log(news);
+    newsJingleSound = loadSound('assets/sounds/181899__zagi2__thrill-announcement-2.wav');
 
     ritaModel = RiTa.markov(4); // ref from rita
     ritaModel.addText(dataForRita.join(' ')); // ref from rita
@@ -110,16 +155,10 @@ function setup() {
     textAlign(CENTER, CENTER);
 
     console.log(voiceOutput.listVoices()); 
-
-    // Reference ChatGPT4
-    // let originalString = "This is a sample string, with numbers 123 and symbols !@#.";
-    // let cleanedString = originalString.replace(/[^a-zA-Z\s]/g, '').replace(/\s+/g, ' ');
-    // console.log(cleanedString);
-    // Result: This is a sample string, with numbers and symbols.
 }
 
 function getResponseAnswer() {
-    
+    currentWordMapRita = [];
     voiceOutput.setVoice(`Google UK English Male`);
     responseFromRita = ritaModel.generate();
     // voiceOutput.speak(responseFromRita + "What do you think of that?");
@@ -139,25 +178,58 @@ function draw() {
     ritaAnswerVis();
     titleInstruction();
     displayNews();
-
+    checkIfMouseOverWord();
 }
 
 function displayNews() {
     if (showNews) { 
+        push();
         fill(0);
-        rect(0, 0, 200, 200);
+        rect(0, 0, 300, 800);
         fill(255);
-        stroke(255);
-        text(newsWord, 100, 100);
+        //stroke(255);
+        noStroke();
+        textWrap(WORD);
+        textSize(30);
+        text(newsTitle, 10, 50, 280);
+        textSize(15);
+        text(newsArticle, 10, 200, 280);
+        pop();
     }
 }
 
+function checkIfMouseOverWord() { // check when the mouse hover over words
+    let newWordCheck = mouseOverWord;
+    let oldNewsWord = newsWord;
+
+    for (let i = 0; i < currentWordMapRita.length; i++) {
+        if (int((mouseX - (width/2))/10) == currentWordMapRita[i][1] && 
+            int((mouseY - (height/2))/10) == currentWordMapRita[i][2]) {
+                newsWord = currentWordMapRita[i][0];
+                mouseOverWord = true;
+                break;  // if the word is found, dont check the other words // therefore, the next if statement will never be reached
+            }
+        if (i === currentWordMapRita.length - 1) {
+            mouseOverWord = false; // if it went through all the words, and no match, that means mouse isn't over word.
+        }
+    }
+    if (newWordCheck != mouseOverWord && oldNewsWord != newsWord) { // if newWordCheck is different than mouseOverWord and oldNewsWord is different than newsWord, then we know for sure we have the mouse over a new word for the first time.
+        //console.log("old news word is: " + oldNewsWord + " newsWord is: " + newsWord);
+        newsJingleSound.play();
+        getNews(newsWord);
+    }
+}
+
+
 function ritaSayNextWord() { // word appear similarly to the conversation - one at the time
     if (ritaWillSay.length > 0) {
-        let nextword = ritaWillSay[0];
-        voiceOutput.speak(nextword);
+        let nextWord = ritaWillSay[0];
+        voiceOutput.speak(nextWord);
+        let wordCoords = wordToVec(nextWord);
+        currentWordMapRita.push([nextWord, int((wordCoords[0] * (width/3))/10), int((wordCoords[1] * (height/3))/10)]);
         ritaSaid.push(ritaWillSay.shift());
-        fadeOut ++; 
+        fadeOut ++;
+        // console.log(currentWordMapRita);
     }
 }
 
@@ -207,13 +279,17 @@ function userQuestion() {
     }
 }
 
+
+
 function wordMap(currentPhrase, isUser) { // visual of the maps 
     textSize(15);
     push();
         translate(width/2, height/2);
         beginShape(); // drawing the line starts here
-        showNews = false;
-        newsWord = "";
+        
+        //let oldShowNews = showNews;
+        //showNews = false;
+        //newsWord = "";
         for (let i = 0; i < currentPhrase.length; i++) {
             let vectorResult = wordToVec(currentPhrase[i]); // the magic happens here - turn word into vector (matrices & vectors course got handy here)
             if (isUser) {
@@ -224,16 +300,11 @@ function wordMap(currentPhrase, isUser) { // visual of the maps
             }
             vertex(vectorResult[0] * width/3, vectorResult[1] * height/3); // points connected by the line
             text(currentPhrase[i], vectorResult[0] * (width/3), vectorResult[1] * (height/3)); // integrating user sentence and position it a the point where we calculated the vectors
-            
-            // round up to make the mouse recognize word easier
-            if (int((mouseX - (width/2))/10) == int((vectorResult[0] * (width/3))/10) && 
-                int((mouseY - (height/2))/10) == int((vectorResult[1] * (height/3))/10)) {
-                    showNews = true;
-                    newsWord = currentPhrase[i];
-            }
         }
+        
         // console.log(int((mouseX - width/2)/10));
         noFill();
+        //newsJingleSound.play();
         stroke(0, 100);
         endShape(); // Drawing the line is ended, all the points are defined and the line are connecting it 
     pop();
