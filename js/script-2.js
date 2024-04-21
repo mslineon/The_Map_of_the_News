@@ -3,6 +3,8 @@
 
 "use strict";
 
+let scene = "title"; 
+
 let newsJingleSound;
 let playedAlreadyForThisWord = false;
 
@@ -87,23 +89,16 @@ let ritaQuestionsBefore = [ // statement to make the response from Rita more hum
 function preload() {
     dataForRita = loadStrings("assets/data/text.txt"); // P5js ref to load the text files.
     titleFont = loadFont("assets/fonts/dahlia-regularcondensed.otf"); // loading title font
-    // myFont = loadFont("assets/fonts/WorkSans-Light.ttf"); // loading text font
-    // const proxyUrl = "https://cors-anywhere.herokuapp.com/"
-    // const qInTitle = "Trump";
-    // const from = "us";
-    // const apiKey = "c3396e37e9bf493381de2ddc7c175ba3";
-    // news = loadJSON(`https://newsapi.org/v2/everything?qInTitle=${qInTitle}&from=${from}language=en&apiKey=${apiKey}`);
 }
 
-function getNews(query) {
-    const proxyUrl = "https://cors-anywhere.herokuapp.com/"
-    const qInTitle = query;
-    const from = "us";
-    const apiKey = "c3396e37e9bf493381de2ddc7c175ba3";
-    const getNewsUrl = `https://newsapi.org/v2/everything?qInTitle=${qInTitle}&from=${from}language=en&apiKey=${apiKey}`;
-    loadJSON(getNewsUrl, newsReady);
-
-}
+// function getNews(query) {
+//     const proxyUrl = "https://cors-anywhere.herokuapp.com/"
+//     const qInTitle = query;
+//     const from = "us";
+//     const apiKey = "c3396e37e9bf493381de2ddc7c175ba3";
+//     const getNewsUrl = `https://newsapi.org/v2/everything?qInTitle=${qInTitle}&from=${from}language=en&apiKey=${apiKey}`;
+//     loadJSON(getNewsUrl, newsReady);
+// }
 
 function newsReady(newNews) {
     let idx = 0;
@@ -154,10 +149,19 @@ function setup() {
 
     textAlign(CENTER, CENTER);
 
-    console.log(voiceOutput.listVoices()); 
+    // console.log(voiceOutput.listVoices()); // print the voice options
+}
+
+function keyPressed() {
+    if (keyCode === ENTER) {
+        getResponseAnswer();
+    }
 }
 
 function getResponseAnswer() {
+    if (scene == "title") {
+        scene = "main";
+    }
     currentWordMapRita = [];
     voiceOutput.setVoice(`Google UK English Male`);
     responseFromRita = ritaModel.generate();
@@ -172,13 +176,22 @@ function getResponseAnswer() {
 }
 
 function draw() {
-    background(240,248,255); 
-    userQuestion();
-    wordMap(words, true); // words on map (see function below)
-    ritaAnswerVis();
-    titleInstruction();
-    displayNews();
-    checkIfMouseOverWord();
+    background(240,248,255);
+
+    if (scene == "title") {
+        textFont(titleFont);
+        textSize(45);
+        fill(0);
+        text(`I have questions but no queries,\nReplies but no voices,\nConclusions but no judgments.\nWhat am I?`, width/2, height/2,  )
+    }
+    else if (scene == "main") {
+        userQuestion();
+        wordMap(words, true); // words on map (see function below)
+        ritaAnswerVis();
+        titleInstruction();
+        displayNews();
+        checkIfMouseOverWord();
+    }
 }
 
 function displayNews() {
@@ -215,8 +228,8 @@ function checkIfMouseOverWord() { // check when the mouse hover over words
     }
     if (newWordCheck != mouseOverWord && oldNewsWord != newsWord) { // if newWordCheck is different than mouseOverWord and oldNewsWord is different than newsWord, then we know for sure we have the mouse over a new word for the first time.
         //console.log("old news word is: " + oldNewsWord + " newsWord is: " + newsWord);
-        newsJingleSound.play();
-        getNews(newsWord);
+        // newsJingleSound.play();
+        // getNews(newsWord);
     }
 }
 

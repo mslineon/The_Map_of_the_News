@@ -1,3 +1,11 @@
+# Update from initial prototype
+
+Script-3 // Removal of the API call to get the news as mentioned from the prototype comments, it's just too much fluff. Therefore, took a step back and simplified the project so hopefully it doesn't lose too much of its meaning and worked on the details of the initial prototype. voila. 
+
+references background image:
+unigrim image and modified it: https://stock.adobe.com/ca/search/images?k=elevation&search_type=usertyped&asset_id=382228439
+
+----
 
 # The Map of the words
 The Map is not the territory - the response is not the answer. 
